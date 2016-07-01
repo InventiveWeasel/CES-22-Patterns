@@ -3,19 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exerpatterns;
-import factory.*;
-import factory.appleFactory;
+package factory;
+
 /**
  *
  * @author Ana Cuder
  */
-public class ExerPatterns {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+public class factoryExer {
+    public static void main(String args[]){
         appleFactory aFac = new appleFactory();
         grapeFactory gFac = new grapeFactory();
         peachFactory pFac = new peachFactory();
@@ -29,8 +24,8 @@ public class ExerPatterns {
         peach p;
         p = pFac.createFruit();
         
-        
-        
+        a.showInfo();
+        g.showInfo();
+        p.showInfo();
     }
-    
 }
